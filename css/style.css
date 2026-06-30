@@ -166,3 +166,122 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.page-header {
+  padding: 70px 8% 40px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.filter-section {
+  padding: 10px 8% 30px;
+  text-align: center;
+}
+
+.filter-btn {
+  border: none;
+  background: white;
+  color: #0369a1;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #0284c7;
+  color: white;
+}
+
+.content-grid {
+  padding: 30px 8% 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.content-card {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  text-align: left;
+}
+
+.content-card h3 {
+  margin: 14px 0 10px;
+  color: #0f172a;
+}
+
+.content-card p {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.label.matematika {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.label.fisika {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.label.kimia {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.label.biologi {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.read-link {
+  color: #0284c7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
