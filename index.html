@@ -3,84 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website pembelajaran Indoscientist untuk materi Matematika dan IPA." />
   <title>Indoscientist | Guru Matematika & IPA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">IS</span>
+      <span>Indoscientist</span>
+    </a>
 
-  <header class="navbar">
-    <div class="logo">Indoscientist</div>
-    <nav>
-      <a href="index.html">Beranda</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">☰</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="active">Beranda</a>
       <a href="materi.html">Materi</a>
       <a href="bank-soal.html">Bank Soal</a>
       <a href="artikel.html">Artikel</a>
       <a href="kontak.html">Kontak</a>
+      <button class="theme-toggle" id="themeToggle" type="button">🌙</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <p class="badge">Guru Matematika & IPA</p>
-      <h1>Belajar Sains dan Matematika Jadi Lebih Mudah</h1>
-      <p>
-        Website pembelajaran dari Indoscientist untuk membantu siswa memahami
-        Matematika, Fisika, Kimia, dan Biologi dengan cara yang sederhana,
-        runtut, dan menyenangkan.
-      </p>
-      <div class="hero-buttons">
-        <a href="materi.html" class="btn-primary">Lihat Materi</a>
-        <a href="bank-soal.html" class="btn-secondary">Bank Soal</a>
-      </div>
-    </div>
-
-    <div class="hero-card">
-      <h3>Fokus Pembelajaran</h3>
-      <ul>
-        <li>Matematika SMA/MA</li>
-        <li>Fisika Dasar</li>
-        <li>Kimia Dasar</li>
-        <li>Biologi Dasar</li>
-        <li>Latihan Soal & Pembahasan</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="features">
-    <h2>Apa yang Ada di Website Ini?</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Materi Ringkas</h3>
-        <p>Materi pelajaran disusun bertahap agar mudah dipahami siswa.</p>
+  <main>
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Guru Matematika & IPA</p>
+        <h1>Belajar sains dan matematika jadi lebih jelas, runtut, dan menyenangkan.</h1>
+        <p class="hero-subtitle">
+          Indoscientist adalah ruang belajar digital untuk siswa yang ingin memahami Matematika, Fisika, Kimia, dan Biologi dengan bahasa sederhana dan contoh yang dekat dengan kehidupan sehari-hari.
+        </p>
+        <div class="hero-actions">
+          <a href="materi.html" class="btn btn-primary">Mulai Belajar</a>
+          <a href="bank-soal.html" class="btn btn-ghost">Latihan Soal</a>
+        </div>
+        <div class="stats-row">
+          <div><strong>4</strong><span>Mapel utama</span></div>
+          <div><strong>100%</strong><span>Mobile friendly</span></div>
+          <div><strong>24/7</strong><span>Akses materi</span></div>
+        </div>
       </div>
 
-      <div class="feature-card">
-        <h3>Bank Soal</h3>
-        <p>Kumpulan soal latihan Matematika dan IPA untuk persiapan ujian.</p>
+      <div class="hero-visual reveal">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="dashboard-card main-card">
+          <div class="card-topline">
+            <span></span><span></span><span></span>
+          </div>
+          <h3>Rencana Belajar Hari Ini</h3>
+          <div class="lesson-list">
+            <div class="lesson-item"><span>∑</span><div><b>Matematika</b><small>Fungsi kuadrat</small></div></div>
+            <div class="lesson-item"><span>⚛</span><div><b>Fisika</b><small>Gerak lurus</small></div></div>
+            <div class="lesson-item"><span>🧪</span><div><b>Kimia</b><small>Struktur atom</small></div></div>
+            <div class="lesson-item"><span>🧬</span><div><b>Biologi</b><small>Sel kehidupan</small></div></div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="feature-card">
-        <h3>Artikel Edukasi</h3>
-        <p>Tulisan seputar pembelajaran, sains, teknologi, dan pendidikan.</p>
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Fitur Utama</p>
+        <h2>Satu tempat untuk materi, soal, dan artikel edukasi.</h2>
       </div>
-    </div>
-  </section>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="icon">📚</div><h3>Materi Terstruktur</h3><p>Materi disusun per topik agar siswa mudah mengikuti dari konsep dasar sampai latihan.</p></article>
+        <article class="feature-card reveal"><div class="icon">📝</div><h3>Bank Soal</h3><p>Latihan soal untuk asesmen, ulangan, dan penguatan konsep Matematika serta IPA.</p></article>
+        <article class="feature-card reveal"><div class="icon">🔎</div><h3>Mudah Dicari</h3><p>Konten bisa dikembangkan dengan pencarian, filter kelas, dan kategori pelajaran.</p></article>
+      </div>
+    </section>
 
-  <section class="subjects">
-    <h2>Bidang Pelajaran</h2>
+    <section class="section subjects-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Bidang Pelajaran</p>
+        <h2>Fokus pada Matematika dan IPA.</h2>
+      </div>
+      <div class="subject-grid">
+        <a class="subject-card reveal" href="materi.html"><span>∑</span><h3>Matematika</h3><p>Aljabar, fungsi, geometri, statistika.</p></a>
+        <a class="subject-card reveal" href="materi.html"><span>⚛</span><h3>Fisika</h3><p>Pengukuran, gerak, gaya, energi.</p></a>
+        <a class="subject-card reveal" href="materi.html"><span>🧪</span><h3>Kimia</h3><p>Atom, ikatan, reaksi, larutan.</p></a>
+        <a class="subject-card reveal" href="materi.html"><span>🧬</span><h3>Biologi</h3><p>Sel, organ, ekosistem, genetika.</p></a>
+      </div>
+    </section>
 
-    <div class="subject-grid">
-      <div class="subject-card">Matematika</div>
-      <div class="subject-card">Fisika</div>
-      <div class="subject-card">Kimia</div>
-      <div class="subject-card">Biologi</div>
-    </div>
-  </section>
+    <section class="cta section reveal">
+      <div>
+        <p class="eyebrow">Siap dikembangkan</p>
+        <h2>Nanti bisa tersambung ke Supabase.</h2>
+        <p>Materi, artikel, bank soal, file PDF, dan login admin bisa dibuat dinamis tanpa pindah hosting dari GitHub Pages.</p>
+      </div>
+      <a class="btn btn-primary" href="kontak.html">Hubungi Guru</a>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2026 Indoscientist. Website Guru Matematika & IPA.</p>
+  <footer class="site-footer">
+    <p>© 2026 Indoscientist. Website Guru Matematika & IPA.</p>
   </footer>
 
+  <script src="js/app.js"></script>
 </body>
 </html>

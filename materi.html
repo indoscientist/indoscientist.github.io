@@ -4,117 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Materi | Indoscientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header class="navbar">
-    <div class="logo">Indoscientist</div>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="materi.html">Materi</a>
-      <a href="bank-soal.html">Bank Soal</a>
-      <a href="artikel.html">Artikel</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
-  </header>
-
-  <section class="page-header">
-    <p class="badge">Materi Pembelajaran</p>
-    <h1>Materi Matematika dan IPA</h1>
-    <p>
-      Kumpulan materi ringkas untuk membantu siswa memahami konsep penting
-      Matematika, Fisika, Kimia, dan Biologi.
-    </p>
-  </section>
-
-  <section class="filter-section">
-    <button class="filter-btn active">Semua</button>
-    <button class="filter-btn">Matematika</button>
-    <button class="filter-btn">Fisika</button>
-    <button class="filter-btn">Kimia</button>
-    <button class="filter-btn">Biologi</button>
-  </section>
-
-  <section class="content-grid">
-
-    <article class="content-card">
-      <span class="label matematika">Matematika</span>
-      <h3>Persamaan Linear Satu Variabel</h3>
-      <p>
-        Mengenal bentuk persamaan linear, cara menyelesaikan, dan contoh soal sederhana.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label matematika">Matematika</span>
-      <h3>Sistem Persamaan Linear</h3>
-      <p>
-        Pembahasan metode eliminasi, substitusi, dan campuran dalam SPLDV.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label fisika">Fisika</span>
-      <h3>Besaran dan Satuan</h3>
-      <p>
-        Dasar pengukuran dalam Fisika, besaran pokok, besaran turunan, dan satuan SI.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label fisika">Fisika</span>
-      <h3>Gerak Lurus</h3>
-      <p>
-        Materi GLB dan GLBB lengkap dengan konsep kecepatan, percepatan, dan grafik.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label kimia">Kimia</span>
-      <h3>Struktur Atom</h3>
-      <p>
-        Penjelasan partikel penyusun atom, nomor atom, nomor massa, dan isotop.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label kimia">Kimia</span>
-      <h3>Ikatan Kimia</h3>
-      <p>
-        Mengenal ikatan ion, kovalen, dan logam dalam kehidupan sehari-hari.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label biologi">Biologi</span>
-      <h3>Sel sebagai Unit Kehidupan</h3>
-      <p>
-        Materi tentang struktur sel, organel, dan perbedaan sel hewan serta tumbuhan.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-    <article class="content-card">
-      <span class="label biologi">Biologi</span>
-      <h3>Sistem Organ Manusia</h3>
-      <p>
-        Ringkasan sistem pencernaan, pernapasan, peredaran darah, dan ekskresi.
-      </p>
-      <a href="#" class="read-link">Baca Materi</a>
-    </article>
-
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Indoscientist. Website Guru Matematika & IPA.</p>
-  </footer>
-
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">IS</span><span>Indoscientist</span></a><button class="nav-toggle" id="navToggle">☰</button><nav class="site-nav" id="siteNav"><a href="index.html">Beranda</a><a href="materi.html" class="active">Materi</a><a href="bank-soal.html">Bank Soal</a><a href="artikel.html">Artikel</a><a href="kontak.html">Kontak</a><button class="theme-toggle" id="themeToggle" type="button">🌙</button></nav></header>
+  <main>
+    <section class="page-hero section reveal"><p class="eyebrow">Materi Pembelajaran</p><h1>Materi Matematika dan IPA</h1><p>Pilih materi berdasarkan pelajaran. Ke depannya halaman ini bisa otomatis mengambil data dari Supabase.</p></section>
+    <section class="section compact"><div class="filter-pills reveal"><button class="pill active" data-filter="all">Semua</button><button class="pill" data-filter="matematika">Matematika</button><button class="pill" data-filter="fisika">Fisika</button><button class="pill" data-filter="kimia">Kimia</button><button class="pill" data-filter="biologi">Biologi</button></div>
+      <div class="content-grid" id="materiGrid">
+        <article class="content-card reveal" data-category="matematika"><span class="tag blue">Matematika</span><h3>Persamaan Linear</h3><p>Konsep variabel, koefisien, konstanta, dan penyelesaian persamaan.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="matematika"><span class="tag blue">Matematika</span><h3>Fungsi Kuadrat</h3><p>Grafik parabola, akar-akar, titik puncak, dan aplikasi soal.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="fisika"><span class="tag cyan">Fisika</span><h3>Besaran dan Satuan</h3><p>Besaran pokok, turunan, satuan SI, dan angka penting.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="fisika"><span class="tag cyan">Fisika</span><h3>Gerak Lurus</h3><p>GLB, GLBB, grafik gerak, kecepatan, dan percepatan.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="kimia"><span class="tag green">Kimia</span><h3>Struktur Atom</h3><p>Proton, neutron, elektron, isotop, dan konfigurasi elektron.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="kimia"><span class="tag green">Kimia</span><h3>Ikatan Kimia</h3><p>Ikatan ion, kovalen, logam, dan sifat senyawa.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="biologi"><span class="tag amber">Biologi</span><h3>Sel Kehidupan</h3><p>Organel sel, membran, inti sel, serta sel hewan dan tumbuhan.</p><a href="#">Baca Materi →</a></article>
+        <article class="content-card reveal" data-category="biologi"><span class="tag amber">Biologi</span><h3>Sistem Organ</h3><p>Pencernaan, pernapasan, sirkulasi, dan ekskresi manusia.</p><a href="#">Baca Materi →</a></article>
+      </div>
+    </section>
+  </main><footer class="site-footer"><p>© 2026 Indoscientist.</p></footer><script src="js/app.js"></script>
 </body>
 </html>
